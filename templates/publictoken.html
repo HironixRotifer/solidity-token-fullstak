@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <title>Public Token</title>
+    <form method="post" class="form">
+        <label class="lab">Buy public token</label>
+        <div class="in-form">
+            <label class="label"> Amount </label>
+            <input type="text" name="amount" placeholder="Enter amount tokens" required>
+        </div>
+        <div class="in-form">
+            <label class="label"> acc </label>
+            <input type="text" name="acc" placeholder="Enter your account" required>
+        </div>
+        <div class="in-form">
+            <label class="label"> Key </label>
+            <input type="password" name="key" placeholder="Enter your account key" required>
+        </div>
+        <button type="submit">Buy</button>
+    </form>
+
+    <div class="flash">
+        {% for message in get_flashed_messages() %}
+        <div>{{ message }}</div>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}

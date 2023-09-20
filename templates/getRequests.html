@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<div>
+    {% for requests in requests %}
+    <div class="req">
+        <h3>Name: {{ requests[0] }} | Address: {{ requests[1] }} | ID: {{ requests[2] }} </h3>
+        
+            <a class="knopkaA" href="/getRequests/{{requests[2]}}"> approve </a>
+            <a class="knopkaR" href="/removeRequest/{{requests[2]}}"> remove </a>
+        
+        
+        
+        
+    </div>
+
+{% endfor %}
+</div>
+
+
+{% endblock %}

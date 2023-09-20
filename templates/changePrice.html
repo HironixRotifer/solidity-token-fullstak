@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <title>Change</title>
+    <form method="post" class="form">
+        <label class="lab">New price</label>
+        <div class="in-form">
+            <label class="label"> Account </label>
+            <input type="text", name="acc" placeholder="Enter your account" required>
+        </div>
+        <div class="in-form">
+            <label class="label"> Key </label>
+            <input type="password" name="key" placeholder="Enter your account key" required>
+        </div>
+        <div class="in-form">
+            <label class="label"> New price </label>
+            <input type="password" name="newPrice" placeholder="Enter new price" required>
+        </div>
+        <button type="submit">Approve</button>
+    </form>
+
+    <div class="flash">
+        {% for message in get_flashed_messages() %}
+        <div>{{ message }}</div>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}

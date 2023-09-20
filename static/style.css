@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;   
+}
+
+.faza {
+    margin: 20px;
+    padding: 20px;
+    color: bisque;
+    border: 2px solid black;
+}
+
+.faza h2 {
+    margin: 10px;
+    padding: 10px;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 25px;
+    margin-right: auto;
+    color: bisque;
+    padding-bottom: 1000px;
+    flex-direction: column;
+    text-align: right;
+    display: flex;
+    position: fixed; 
+    justify-content: left;
+}
+
+nav a {
+    padding: 15px;
+    margin: 5px;
+    color: bisque;
+    display: flex;
+    border: 2px solid bisque;
+}
+
+a {
+    margin-right: auto;
+    color: bisque;
+    text-decoration: none;
+    display: flex;
+    transition: all 0.1s;
+}
+a:hover {
+    scale: 0.95;
+
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.884);
+    background-image: radial-gradient( circle, rgba(  0, 0, 0, 0 ) 0%, rgba( 0, 0, 0, 0.8 ) 100% );
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}    
+
+body main {
+    display: flex;
+    position: static; 
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+/* РАбота с формами ввода */
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px;
+    max-width: 400px;
+    color: bisque;    
+    grid-gap: 10px;
+    box-shadow: 0px 1px 2px 0px rgba(255, 174, 0, 0.7),
+                1px 4px 4px 0px rgba(255, 174, 0, 0.7),
+                2px 1px 2px 0px rgba(255, 174, 0, 0.7),
+                1px 4px 16px 0px rgba(255, 174, 0, 0.7);
+
+    background-color: rgba(0, 0, 0, 0.884);
+    border: 2px solid bisque;
+
+}
+
+.form .lab {
+    padding: 15px;
+    font-size: 28px;
+    flex-direction: column;
+    text-decoration: double;
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+.in-form {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.in-form label {
+    
+    text-align: left;
+    display: flex;
+}
+
+.in-form input {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    color: beige;
+    background-color: rgb(49, 46, 46);
+
+}
+
+.form button {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    transition: all 0.1s;
+    color: #1c1c1c;
+    background-color: bisque;
+}
+
+.form button:hover {
+    scale: 0.95;
+}
+
+/*  КАНЕЦ */
+
+/* ФОРМА ЛК */
+
+.struct {
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.in-struct {
+    color: bisque;
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+    text-align: left;
+
+}
+
+.in-struct p {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 15px;
+    transition: all 0.1s;
+}
+
+.in-struct p:hover {
+    scale: 0.95;
+}
+
+.in-struct label {
+    padding: 15px;
+    margin: 105px;
+}
+
+/* КАНЕЦ ЛК */
+
+footer {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 25px;
+}
+
+.req {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid bisque;
+}
+
+.req h3 {
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+
+.knopkaA {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    border: 2px solid bisque;
+    font-size: 18px;  
+    max-width: 100px;
+}
+
+.knopkaR {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    border: 2px solid bisque;
+    font-size: 18px;
+    max-width: 100px;
+}
+
+main .crow
+{
+	height: 35em;
+	width: 30em;
+	position: relative;
+	background:
+		/* Cage - Top */
+		radial-gradient( ellipse 100% 100%,
+			transparent calc( 50% - .3em ),
+			#000 calc( 50% - .2em ),
+			#000 calc( 50% - .1em ),
+			transparent 50%
+		) right calc( 50% - 1.7em ) bottom 30.2em / 1.7em 1.7em,
+		
+		radial-gradient( ellipse 100% 100%,
+			transparent calc( 50% - .3em ),
+			#000 calc( 50% - .2em ),
+			#000 calc( 50% - .1em ),
+			transparent 50%
+		) left 50% bottom 30.4em / 2.4em 2.4em,
+		
+		radial-gradient( ellipse 100% 100%,
+			transparent calc( 50% - .3em ),
+			#000 calc( 50% - .2em ),
+			#000 calc( 50% - .1em ),
+			transparent 50%
+		) left calc( 50% - 1.8em ) bottom 30.2em / 1.7em 1.7em,
+		
+		/* Cage - Top half circles */
+		radial-gradient( ellipse 100% 100% at 50% 100%,
+			transparent calc( 50% - .25em ),
+			#000 calc( 50% - .2em ),
+			#000 calc( 50% - .1em ),
+			transparent 50%
+		) left 50% bottom 23.7em / 4.92em 14em,
+		
+		radial-gradient( ellipse 100% 100% at 50% 100%,
+			transparent calc( 50% - .3em ),
+			#000 calc( 50% - .2em ),
+			#000 calc( 50% - .1em ),
+			transparent 50%
+		) left 50% bottom 23.7em / 9.38em 14em,
+		
+		radial-gradient( ellipse 100% 100% at 50% 100%,
+			transparent calc( 50% - .3em ),
+			#000 calc( 50% - .2em ),
+			#000 calc( 50% - .1em ),
+			transparent 50%
+		) left 50% bottom 23.7em / 13.87em 13.87em,
+		
+		/* Cage - Horizontal lines */
+		linear-gradient( 
+			#000, #000
+		) left 50% bottom 27.35em / 11.3em .2em,
+		
+		linear-gradient( 
+			#000, #000
+		) left 50% bottom 23.51em / 13.8em .2em,
+		
+		/* Cage - Vertical lines */
+		linear-gradient( 
+			#000, #000
+		) right calc( 50% - 2.3em ) bottom 10.6em / .2em 13em,
+		
+		linear-gradient( 
+			#000, #000
+		) right calc( 50% - 4.55em ) bottom 10.6em / .2em 13em,
+		
+		linear-gradient( 
+			#000, #000
+		) right calc( 50% - 6.8em ) bottom 10.6em / .2em 13em,
+		
+		linear-gradient( 
+			#000, #000
+		) left 50% bottom 10.6em / .2em 19.9em,
+		
+		linear-gradient( 
+			#000, #000
+		) left calc( 50% - 2.3em ) bottom 10.6em / .2em 13em,
+		
+		linear-gradient( 
+			#000, #000
+		) left calc( 50% - 4.55em ) bottom 10.6em / .2em 13em,
+		
+		
+		/* Cage - Base */
+		linear-gradient( 
+			#000, #000
+		) left 50% bottom 9.2em / 13.8em 1.4em,
+		
+		/* Crow - Eye */
+		radial-gradient( ellipse 100% 100%,
+			#000 37%,
+			#FFF 40%,
+			#FFF 47%,
+			transparent 50%
+		) left calc( 50% - 2.3em ) bottom calc( 50% + 2.3em ) / 2.1em 2.1em,
+		
+		/* Crow - Beak border */
+		linear-gradient(
+			#111, #111
+		) left calc( 50% - 5em ) bottom 19em / .2em 3em,
+		
+		/* Crow - Body */
+		linear-gradient( 45deg,
+			transparent 31%,
+			#311f59 31%, 
+			#000 61%,
+			transparent 61%
+		) left calc( 50% + 1em ) bottom 50% / 12em 9.16em,
+		
+		radial-gradient( ellipse 50% 100% at 100% 0,
+			#311f59 50%,
+			transparent 50.5%
+		) left calc( 50% - 10.7em ) bottom 6.45em / 23em 13em,
+		
+		linear-gradient(
+			#311f59, #311f59
+		) left calc( 50% + 1em ) bottom 12.95em / 1em 1em,
+		
+		/* Crow - Tail */
+		linear-gradient( 45deg,
+			transparent 40%,
+			#000 40%, 
+			#000 45%,
+			transparent 45%
+		) left calc( 50% + 7.2em ) bottom 10em / 9em 9em,
+		
+		/* Crow - Beak */
+		linear-gradient(
+			#111, #111
+		) left calc( 50% - 5.9em ) bottom 20.3em / 5em .2em,
+		
+		radial-gradient( ellipse 100% 100% at 50% 110%,
+			#311f59 49%,
+			transparent 51%
+		) left calc( 50% - 5em ) bottom 20.4em / 7em 4em,
+		
+		radial-gradient( ellipse 100% 100% at 50% -10%,
+			#311f59 49%,
+			transparent 51%
+		) left calc( 50% - 5em ) bottom 16.5em / 7em 4em,
+		
+		/* Cage - Left vertical line */
+		linear-gradient( 
+			#000, #000
+		) left calc( 50% - 6.8em ) bottom 10.6em / .2em 13em,
+		
+		/* Crow - Legs */
+		linear-gradient( -45deg,
+			transparent calc( 50% - .1em ),
+			#000 calc( 50% - .1em ), 
+			#000 calc( 50% + .1em ),
+			transparent calc( 50% + .1em )
+		) left calc( 50% - 1.1em ) bottom 10.6em / 2.25em 2.25em,
+		
+		linear-gradient( -45deg,
+			transparent calc( 50% - .1em ),
+			#000 calc( 50% - .1em ), 
+			#000 calc( 50% + .1em ),
+			transparent calc( 50% + .1em )
+		) right calc( 50% - 1.2em ) bottom 10.5em / 2.25em 2.25em,
+		
+		/* Base 2 */
+		linear-gradient( 
+			#000, #000
+		) left 50% bottom 9em / 17.5em .2em,
+		
+		linear-gradient(
+			#d55d1f, #d55d1f
+		) right 8.1em bottom 6.2em / 1.5em 2.8em,
+		
+		linear-gradient(
+			#d55d1f, #d55d1f
+		) left 8.1em bottom 6.2em / 1.5em 2.8em,
+		
+		radial-gradient( ellipse 100% 100%,
+			#feb60d 48%,
+			transparent 50%
+		) left 50% bottom 6.75em / 4.5em 1.65em,
+		
+		linear-gradient(
+			#fd851c, #e06a1d
+		) left 50% bottom 6.2em / 16.8em 2.8em,
+		
+		/* Base 1 */
+		linear-gradient( 
+			#000, #000
+		) left 50% bottom 6em / 19.5em .2em,
+		
+		linear-gradient( 
+			#2f1e5a, #2f1e5a
+		) right 8.75em bottom 4.65em / .2em 1.5em,
+		
+		linear-gradient( 
+			#2f1e5a, #2f1e5a
+		) right 8em bottom 4.65em / .2em 1.5em,
+		
+		linear-gradient( 
+			#2f1e5a, #2f1e5a
+		) right 7.3em bottom 4.65em / .2em 1.5em,
+		
+		linear-gradient( 
+			#2f1e5a, #2f1e5a
+		) left 8.75em bottom 4.65em / .2em 1.5em,
+		
+		linear-gradient( 
+			#2f1e5a, #2f1e5a
+		) left 8em bottom 4.65em / .2em 1.5em,
+		
+		linear-gradient( 
+			#2f1e5a, #2f1e5a
+		) left 7.3em bottom 4.65em / .2em 1.5em,
+		
+		linear-gradient( 
+			#2f1e5a, #2f1e5a
+		) left 50% bottom 5.2em / 8.5em .2em,
+		
+		linear-gradient(
+			#000, #000
+		) left 50% bottom 4.65em / 19em 1.5em,
+		
+		/* Base 0 */
+		linear-gradient( 
+			#000, #000 
+		) left 50% bottom 4.45em / 22em .2em,
+		
+		linear-gradient( 90deg,
+			#d6c1e3, #d6c1e3
+		) right 7.8em bottom 2.35em / .8em 2.1em,
+		
+		linear-gradient( 90deg,
+			#d6c1e3, #d6c1e3
+		) right 12.4em bottom 2.35em / .8em 2.1em,
+		
+		linear-gradient( 90deg,
+			#d6c1e3, #d6c1e3
+		) left 12.4em bottom 2.35em / .8em 2.1em,
+		
+		linear-gradient( 90deg,
+			#d6c1e3, #d6c1e3
+		) left 7.8em bottom 2.35em / .8em 2.1em,
+		
+		linear-gradient(
+			#FFF, #dccae7
+		) left 50% bottom 2.35em / 21.5em 2.1em,
+		
+		linear-gradient( 
+			#000, #000 
+		) left 50% bottom 2.15em / 25em .2em;
+		
+	background-repeat: no-repeat;
+}
+
+main .crow::before {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 4.5em;
+	width: 7em;
+	border-radius: 1.5em 0 0 2em;
+	background: 
+		
+		/* Horizontal lines */
+		linear-gradient(
+			#000, #000
+		) 0 calc( 50% + .7em ) / 4.5em .2em,
+		
+		linear-gradient(
+			#000, #000
+		) 0 calc( 50% - .8em ) / 2.2em .2em,
+		
+		/* Vertical lines */
+		linear-gradient(
+			#000, #000
+		) 4.45em 50% / .2em 100%,
+		
+		linear-gradient(
+			#000, #000
+		) 2.2em 50% / .2em 100%,
+		
+		linear-gradient(
+			#000, #000
+		) 0 50% / .1em 100%,
+		
+		/* Background */
+		linear-gradient( 45deg,
+			#2f1e5b 30%,
+			#762b77 60%
+		);
+	
+	background-repeat: no-repeat;
+	left: 50%;
+	top: 50%;
+	margin-top: -1em;
+	box-shadow: 0 0 1em 0 rgba(0,0,0,.5);
+	clip-path: polygon(
+		-1em -1em,
+		2.4em 0,
+		calc( 100% - .1em ) 100%,
+		-1em calc( 100% + 1em )
+	);
+}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<title>Account</title>
+
+<div class="lk">
+
+  <div class="struct">
+      <div class="in-struct">
+          <p>Name: {{info[0]}}</p>
+          <p>Ether: {{ balance / (10*15) }}</p>
+          {% if info[3] == True %}
+              <p>Application: Approved</p>
+          {% else %}
+              <p>Application: Not approved</p>
+          {% endif %}
+            <div>
+                <label>Token balance:</label>
+                <p>Public: {{ public }}</p>
+                <p>Private: {{ private }}</p>
+                <p>Seed: {{ seed }}</p>
+            </div>
+            {% if info[2] == 1 %}
+              <p>Your role: User</p>
+            {% endif %}
+            {% if info[2] ==  2 %}
+                <p>Your role: Public Provider</p>
+            {% endif %}
+            {% if info[2] == 3 %}
+                <p>Your role: Private Provider</p>
+            {% endif %}
+      </div>
+  </div>
+</div>
+
+<div class="flash">
+    {% for message in get_flashed_messages() %}
+    <div>{{ message }}</div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}

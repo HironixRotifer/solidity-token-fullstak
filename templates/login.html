@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+    <title>Sign In</title>
+
+    <div>
+        <form method="post" class="form">
+            <label class="lab">Sign In</label>
+            <div class="in-form">
+                <label class="label"> Account </label>
+                <input type="text" name="acc" placeholder="Enter your account" required>
+            </div>
+            <div class="in-form">
+                <label class="label"> Key </label>
+                <input type="password" name="key" placeholder="Enter your account key" required>
+            </div>
+            <div class="in-form">
+                <label class="label"> Name </label>
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="in-form">
+                <label class="label"> Password </label>
+                <input type="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit">Sign In</button>
+            
+        </form>
+    
+        <div class="flash">
+            {% for message in get_flashed_messages() %}
+            <div>{{ message }}</div>
+            {% endfor %}
+        </div>
+    </div>
+
+    
+
+
+{% endblock %}
